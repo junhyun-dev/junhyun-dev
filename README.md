@@ -8,6 +8,7 @@ I build and run data pipelines for a B2B data SaaS: Airflow and GCP jobs that co
 
 - **[fhir-indicator-line](https://github.com/junhyun-dev/fhir-indicator-line)**: two hospitals' records (synthetic FHIR and the MIMIC-IV demo) mapped to OMOP CDM 5.4 with dbt and DuckDB, giving the same blood pressure control rate from both. Adding the second hospital changed only its staging and code mapping. Every result is compared with expected outputs counted separately from the pipeline.
 - **[minidelta](https://github.com/junhyun-dev/minidelta)**: Delta Lake reads, appends and partition-pruned counts in about 1,000 lines of Python, built in four iterations. Each iteration passed all of its expected results on the first implementation, ending at 1,229 (Delta's acceptance tests, Spark-written tables and my own contract tests).
+- **[tiny-aya-korean-safety-steering](https://github.com/junhyun-dev/tiny-aya-korean-safety-steering)** (Lexsi AI Safety and Alignment Hackathon, November 2026): on the same 255 harmful requests, a small multilingual model gives the requested content about as often in Korean as in English, but warns where it would refuse in English. Inference-time steering turns those warnings into refusals, but with a stricter gate that keeps false refusals near their original level, Korean answers that give the requested content stay at 18%.
 
 ## Open source
 
