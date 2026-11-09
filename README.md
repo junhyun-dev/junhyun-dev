@@ -1,20 +1,25 @@
 # Junhyun Park · Data Engineer
 
-데이터 수집·정제·적재 파이프라인과 운영 모니터링을 개발해 왔습니다.
-현재는 실제 데이터와 업무 문제에서 출발해, 데이터와 AI를 연결하는 개인 프로젝트를 기획하고 있습니다.
+I build and run data pipelines for a B2B data SaaS: Airflow and GCP jobs that collect each customer's data every day. Most of my recent work is on the cases where the batch succeeds but the data is wrong.
 
-[기술 블로그](https://junhyun-engineering.vercel.app/writing/) · [경력과 프로젝트](https://junhyun-engineering.vercel.app/projects/)
+**Now:** finding missing data on the same day it goes missing, tracing a dashboard number back through the transformation models to the source rows, and letting AI agents work on that data under explicit checks. The domain I am going deep in is medical data (OMOP CDM).
 
-Python · SQL · Airflow · BigQuery · GCP · FastAPI
+## Projects
 
-## 오픈소스 기여
+- **[fhir-indicator-line](https://github.com/junhyun-dev/fhir-indicator-line)**: two hospitals' records (synthetic FHIR and the MIMIC-IV demo) mapped to OMOP CDM 5.4 with dbt and DuckDB, giving the same blood pressure control rate from both. Adding the second hospital changed only its staging and code mapping. Every result is compared with expected outputs counted separately from the pipeline.
+- **[minidelta](https://github.com/junhyun-dev/minidelta)**: Delta Lake reads, appends and partition-pruned counts in about 1,000 lines of Python, built in four iterations. Each iteration passed all of its expected results on the first implementation, ending at 1,229 (Delta's acceptance tests, Spark-written tables and my own contract tests).
 
-[Docling Serve · PR #691](https://github.com/docling-project/docling-serve/pull/691)
+## Open source
 
-AI와 함께 문서 변환 화면의 OCR 선택이 API 요청에 반영되지 않는 문제를 재현하고, 수정과 회귀 검사를 담은 PR을 제출했습니다. 2026년 9월에 병합됐습니다.
+- [docling-project/docling-serve #691](https://github.com/docling-project/docling-serve/pull/691), merged 2026-09: the UI's OCR switch was not passed to conversion requests. Fix and regression test.
+- [storytold/photocraft #6882](https://github.com/storytold/photocraft/pull/6882), merged 2026-10: one Korean word for one term across 18 UI labels.
+- [OHDSI/dbt-synthea #154](https://github.com/OHDSI/dbt-synthea/issues/154): reported that `encounter_stop_date` always equals the start date (argument order in a `COALESCE`).
 
-## 이전 작업
+## How I work
 
-[쇼핑 데이터 처리·복구](https://github.com/junhyun-dev/shopping-data-platform) · [직원 업무 도우미](https://github.com/junhyun-dev/employee-assistant/tree/draft-resume) · [설비 데이터 검토](https://github.com/junhyun-dev/manufacturing-data-platform)
+I decide what to build, the design and the expected results. AI coding agents (Claude Code, Codex) write most of the code, and I check every change against expected results prepared beforehand.
 
-개인 프로젝트의 코드와 실행 기록입니다. 각 저장소에서 실행 방법과 확인한 범위를 볼 수 있습니다.
+## Elsewhere
+
+- Blog and project notes (Korean): [junhyun-engineering.vercel.app](https://junhyun-engineering.vercel.app)
+- Databricks Certified Generative AI Engineer Associate (2026)
