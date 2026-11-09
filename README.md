@@ -19,6 +19,8 @@ I build and run data pipelines for a B2B data SaaS: Airflow and GCP jobs that co
 
 I decide what to build, the design and the expected results. AI coding agents (Claude Code, Codex) write most of the code, and I check every change against expected results prepared beforehand.
 
+Many agents share one repository in my workspace. For the Swarm Alignment Hackathon (Apart Research, November 2026) I measured how far their own logs show which agent changed what, across 38 days, 1,576 agent sessions and runs, and 7,986 commits: [agent-attribution-gaps](https://github.com/junhyun-dev/agent-attribution-gaps).
+
 ## Elsewhere
 
 - Blog and project notes (Korean): [junhyun-engineering.vercel.app](https://junhyun-engineering.vercel.app)
