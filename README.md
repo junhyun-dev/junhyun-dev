@@ -13,7 +13,7 @@ I build and run data pipelines for a B2B data SaaS: Airflow and GCP jobs that co
 ## Open source
 
 - [docling-project/docling-serve #691](https://github.com/docling-project/docling-serve/pull/691), merged 2026-09: the UI's OCR switch was not passed to conversion requests. Fix and regression test.
-- [storytold/photocraft #6882](https://github.com/storytold/photocraft/pull/6882), merged 2026-10: one Korean word for one term across 18 UI labels.
+- [storytold/photocraft #6882](https://github.com/storytold/photocraft/pull/6882), merged 2026-10: brought 18 Korean UI strings in line with the project's existing terms and tone.
 - [OHDSI/dbt-synthea #154](https://github.com/OHDSI/dbt-synthea/issues/154): reported that `encounter_stop_date` always equals the start date (argument order in a `COALESCE`).
 
 ## How I work
