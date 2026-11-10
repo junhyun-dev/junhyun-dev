@@ -2,7 +2,7 @@
 
 I build and run data pipelines for a B2B data SaaS: Airflow and GCP jobs that collect each customer's data every day. Most of my recent work is on the cases where the batch succeeds but the data is wrong.
 
-**Now:** finding missing data on the same day it goes missing, tracing a dashboard number back through the transformation models to the source rows, and letting AI agents work on that data under explicit checks. The domain I am going deep in is medical data (OMOP CDM).
+**Now:** engineering with AI coding agents under explicit checks. I set the requirements, design and acceptance criteria, the agents implement, and I review and approve every change against expected results prepared beforehand. On the data side, that means finding missing data on the same day it goes missing and tracing a dashboard number back to its source rows.
 
 ## Projects
 
