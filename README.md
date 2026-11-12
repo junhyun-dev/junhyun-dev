@@ -1,6 +1,6 @@
 # Junhyun Park · Data Engineer
 
-I build and run data pipelines for a B2B data SaaS: Airflow and GCP jobs that collect each customer's data every day. Most of my recent work is on the cases where the batch succeeds but the data is wrong.
+I started in RPA, automating work people did by hand and collecting ERP data with UiPath. Now I build and run data pipelines for a B2B data SaaS: Airflow and GCP jobs that collect each customer's data every day. Where I'm heading: AI agents that work on reliable data. So far that means a prototype agent (Claude Agent SDK) that investigates failed transformations, while I make the final call.
 
 **Now:** engineering with AI coding agents under explicit checks. I set the requirements, design and acceptance criteria, the agents implement, and I review and approve every change against expected results prepared beforehand. On the data side, that means finding missing data on the same day it goes missing and tracing a dashboard number back to its source rows.
 
